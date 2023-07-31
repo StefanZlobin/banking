@@ -17,7 +17,6 @@ class HomePage extends StatelessWidget {
 
   AppBar _buildPageTitle() {
     return AppBar(
-      backgroundColor: AppColors.kBaseLMedium,
       actions: [
         IconButton(
           onPressed: () {},

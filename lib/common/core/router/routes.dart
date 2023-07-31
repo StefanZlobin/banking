@@ -1,5 +1,6 @@
 import 'package:banking/common/core/enum/app_routes_enum.dart';
 import 'package:banking/common/presentation/pages/home_page.dart';
+import 'package:banking/features/credit/presentation/pages/credit_page.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
@@ -13,7 +14,7 @@ class Routes {
     GoRoute(
       path: AppRoutesEnum.credit.routeToPath,
       name: AppRoutesEnum.credit.routeToName,
-      builder: (context, state) => mockPage(state),
+      builder: (context, state) => const CreditPage(),
     ),
     GoRoute(
       path: AppRoutesEnum.mortgage.routeToPath,

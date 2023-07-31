@@ -15,7 +15,10 @@ import 'package:google_fonts/google_fonts.dart';
 sealed class AppTypography {
   // Heading (заголовки)
   static final kH1 = GoogleFonts.inter(fontSize: 24);
-  static final kH2 = GoogleFonts.inter(fontSize: 18);
+  static final kH2 = GoogleFonts.inter(
+    fontSize: 18,
+    fontWeight: FontWeight.w800,
+  );
   static final kH3 = GoogleFonts.inter(fontSize: 16);
   static final kH4 = GoogleFonts.inter(
     fontSize: 14,
