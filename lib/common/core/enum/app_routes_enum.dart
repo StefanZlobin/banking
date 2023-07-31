@@ -8,7 +8,9 @@ enum AppRoutesEnum {
   // credit page
   credit,
   // mortgage page
-  mortgage;
+  mortgage,
+  // settings page
+  settings;
 
   String get routeToPath {
     switch (this) {
@@ -18,6 +20,8 @@ enum AppRoutesEnum {
         return '/${AppRoutesEnum.credit.name}';
       case AppRoutesEnum.mortgage:
         return '/${AppRoutesEnum.mortgage.name}';
+      case AppRoutesEnum.settings:
+        return '/${AppRoutesEnum.settings.name}';
     }
   }
 
@@ -29,6 +33,8 @@ enum AppRoutesEnum {
         return '/${AppRoutesEnum.credit.name.toUpperCase()}';
       case AppRoutesEnum.mortgage:
         return '/${AppRoutesEnum.mortgage.name.toUpperCase()}';
+      case AppRoutesEnum.settings:
+        return '/${AppRoutesEnum.settings.name.toUpperCase()}';
     }
   }
 }

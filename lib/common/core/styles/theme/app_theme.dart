@@ -6,7 +6,6 @@ sealed class AppTheme {
   static ThemeData get mainAppTheme {
     return ThemeData(
       appBarTheme: AppBarTheme(
-        centerTitle: true,
         titleTextStyle: AppTypography.kH4.apply(
           color: AppColors.kBaseBlack,
         ),
@@ -16,6 +15,13 @@ sealed class AppTheme {
           size: 20,
           color: AppColors.kPrimaryBlueDarkest,
         ),
+        titleSpacing: 16,
+        toolbarHeight: 100,
+      ),
+      bottomNavigationBarTheme: const BottomNavigationBarThemeData(
+        selectedItemColor: AppColors.kPrimaryBlueDark,
+        unselectedItemColor: AppColors.kBaseDDartMedium,
+        elevation: 0,
       ),
     );
   }
