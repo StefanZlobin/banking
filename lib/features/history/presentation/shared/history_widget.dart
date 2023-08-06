@@ -16,6 +16,9 @@ class HistoryWidget extends StatelessWidget {
           initial: () => const SizedBox(),
           loading: () => const Center(child: CircularProgressIndicator()),
           loaded: (credits) {
+            if (credits.isEmpty) {
+              return const Text('Нет истории');
+            }
             return ListView.separated(
               itemBuilder: (context, index) {
                 return HistoryCard(
