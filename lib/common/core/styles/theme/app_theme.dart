@@ -25,8 +25,12 @@ sealed class AppTheme {
       ),
       filledButtonTheme: FilledButtonThemeData(
         style: ButtonStyle(
-          backgroundColor: MaterialStateProperty.resolveWith(
-              (states) => AppColors.kPrimaryBlueDark),
+          backgroundColor: MaterialStateProperty.resolveWith((states) {
+            if (states.contains(MaterialState.disabled)) {
+              return AppColors.kBaseDLight;
+            }
+            return AppColors.kPrimaryBlueDark;
+          }),
           foregroundColor: MaterialStateProperty.resolveWith(
               (states) => AppColors.kBaseWhite),
           shape: MaterialStateProperty.resolveWith(

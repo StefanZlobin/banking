@@ -1,0 +1,10 @@
+{
+  "configurations": [
+    {
+      "name": "Flutter (lib/features/history/presentation/components/history_widget.dart)",
+      "type": "dart",
+      "request": "launch",
+      "program": "lib/features/history/presentation/components/history_widget.dart"
+    }
+  ]
+}

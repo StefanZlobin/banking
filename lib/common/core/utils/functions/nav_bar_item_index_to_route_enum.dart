@@ -9,7 +9,7 @@ AppRoutesEnum navBarItetIndexToRouteEnum({required int index}) {
     case 2:
       return AppRoutesEnum.mortgage;
     case 3:
-      return AppRoutesEnum.settings;
+      return AppRoutesEnum.detailedCalculationCredit;
     default:
       return AppRoutesEnum.home;
   }

@@ -11,6 +11,7 @@ dependencies:
   flutter:
     sdk: flutter
 
+  intl: ^0.18.1
   # For store data
   hive: ^2.2.3
   hive_flutter: ^1.1.0
@@ -26,6 +27,10 @@ dependencies:
   freezed_annotation: ^2.4.1
   # Service locator
   get_it: ^7.6.0
+  # Form validate
+  formz: ^0.6.0
+  # Clock
+  clock: ^1.1.1
 
 dev_dependencies:
   # Code gen

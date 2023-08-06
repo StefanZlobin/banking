@@ -9,8 +9,10 @@ enum AppRoutesEnum {
   credit,
   // mortgage page
   mortgage,
-  // settings page
-  settings;
+  // detailed calculation credit page
+  detailedCalculationCredit,
+  // detailed calculation mortgage page
+  detailedCalculationMortgage;
 
   String get routeToPath {
     switch (this) {
@@ -18,10 +20,12 @@ enum AppRoutesEnum {
         return '/${AppRoutesEnum.home.name}';
       case AppRoutesEnum.credit:
         return '/${AppRoutesEnum.credit.name}';
+      case AppRoutesEnum.detailedCalculationCredit:
+        return '/${AppRoutesEnum.detailedCalculationCredit.name}';
       case AppRoutesEnum.mortgage:
         return '/${AppRoutesEnum.mortgage.name}';
-      case AppRoutesEnum.settings:
-        return '/${AppRoutesEnum.settings.name}';
+      case AppRoutesEnum.detailedCalculationMortgage:
+        return '/${AppRoutesEnum.detailedCalculationMortgage.name}';
     }
   }
 
@@ -33,8 +37,10 @@ enum AppRoutesEnum {
         return '/${AppRoutesEnum.credit.name.toUpperCase()}';
       case AppRoutesEnum.mortgage:
         return '/${AppRoutesEnum.mortgage.name.toUpperCase()}';
-      case AppRoutesEnum.settings:
-        return '/${AppRoutesEnum.settings.name.toUpperCase()}';
+      case AppRoutesEnum.detailedCalculationCredit:
+        return '/${AppRoutesEnum.detailedCalculationCredit.name.toUpperCase()}';
+      case AppRoutesEnum.detailedCalculationMortgage:
+        return '/${AppRoutesEnum.detailedCalculationMortgage.name.toUpperCase()}';
     }
   }
 }
